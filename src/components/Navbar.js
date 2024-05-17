@@ -7,7 +7,7 @@ import {BroweserRouter, Router, Route} from 'react-router-dom'
 
 function Navbar() {
 
-  const [showContact, setShowContact] = useState(false); // State to manage visibility of Contact component
+  const [showContact, setShowContact] = useState(false); // state to manage visibility of Contact 
 
   const handleContactClick = () => {
     setShowContact(true);
@@ -19,9 +19,9 @@ function Navbar() {
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><button onClick={handleContactClick}>Contact</button></li> {/* Contact button with onClick handler */}
+        <li><button onClick={handleContactClick}>Contact</button></li> {}
       </ul>
-      {showContact && <Contact />} {/* Render the Contact component if showContact is true */}
+      {showContact && <Contact />} {}
     </nav>
   );
 }
